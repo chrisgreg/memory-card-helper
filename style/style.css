@@ -1,0 +1,41 @@
+body {
+  background-image: url('../public/images/background.png');
+  background-size: 100%;
+  padding-top:5%;
+}
+
+h1 {
+  font-size:6rem;
+  text-transform: uppercase;
+  color: white
+}
+
+h1, h2, h3, h5, label, p {
+  color: white;
+}
+
+.orange {
+  color: #dd683c;
+}
+
+.calculator {
+
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.memory-card-image {
+  display: block;
+  margin: 0 auto;
+  height: 120px;
+  transform: rotate(50deg);
+  padding-bottom: 10%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}

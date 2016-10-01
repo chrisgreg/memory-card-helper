@@ -5,13 +5,18 @@ import CalculatorResult from './calculator_result';
 export default class App extends Component {
   render() {
     return (
-      <div>
-          <h1>Mem Card Helper</h1>
-          <div>
-            <h2>Calculate number of pictures a memory card could store:</h2>
+      <div className="container">
+        <div className="row">
+          <div className="six columns">
+            <h1><span className="orange">Memory Card</span> Helper</h1>
+          </div>
+          <div className="six columns calculator">
+            <img className="memory-card-image" src="public/images/card.svg" />
+            <h5>Calculate the number of pictures a memory card could store:</h5>
             <CalculatorForm />
             <CalculatorResult />
           </div>
+        </div>
       </div>
     );
   }

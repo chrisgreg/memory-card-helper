@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   type: 'RAW',
   resolution: 1,
   cardSize: 1,
-  numberOfPictures: 1
+  numberOfPictures: null
 };
 
 export default function(state = INITIAL_STATE, action){
