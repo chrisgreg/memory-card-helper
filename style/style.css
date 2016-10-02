@@ -12,19 +12,22 @@
        url('fonts/Titillium-Web-regular/Titillium-Web-regular.svg#TitilliumWeb') format('svg');
 }
 
+
 @font-face {
   font-family: 'Catamaran';
   font-weight: 900;
   font-style: normal;
-  src: url('fonts/Catamaran-regular/Catamaran-regular.eot');
-  src: url('fonts/Catamaran-regular/Catamaran-regular.eot?#iefix') format('embedded-opentype'),
-       local('Catamaran'),
-       local('Catamaran-regular'),
-       url('fonts/Catamaran-regular/Catamaran-regular.woff2') format('woff2'),
-       url('fonts/Catamaran-regular/Catamaran-regular.woff') format('woff'),
-       url('fonts/Catamaran-regular/Catamaran-regular.ttf') format('truetype'),
-       url('fonts/Catamaran-regular/Catamaran-regular.svg#Catamaran') format('svg');
+  src: url('fonts/Catamaran-900/Catamaran-900.eot');
+  src: url('fonts/Catamaran-900/Catamaran-900.eot?#iefix') format('embedded-opentype'),
+       local('Catamaran Black'),
+       local('Catamaran-900'),
+       url('fonts/Catamaran-900/Catamaran-900.woff2') format('woff2'),
+       url('fonts/Catamaran-900/Catamaran-900.woff') format('woff'),
+       url('fonts/Catamaran-900/Catamaran-900.ttf') format('truetype'),
+       url('fonts/Catamaran-900/Catamaran-900.svg#Catamaran') format('svg');
 }
+
+
 
 body {
   background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* ff3.6+ */
