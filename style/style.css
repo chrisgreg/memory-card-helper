@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Titillium Web';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/Titillium-Web-regular/Titillium-Web-regular.eot');
+  src: url('fonts/Titillium-Web-regular/Titillium-Web-regular.eot?#iefix') format('embedded-opentype'),
+       local('Titillium Web'),
+       local('Titillium-Web-regular'),
+       url('fonts/Titillium-Web-regular/Titillium-Web-regular.woff2') format('woff2'),
+       url('fonts/Titillium-Web-regular/Titillium-Web-regular.woff') format('woff'),
+       url('fonts/Titillium-Web-regular/Titillium-Web-regular.ttf') format('truetype'),
+       url('fonts/Titillium-Web-regular/Titillium-Web-regular.svg#TitilliumWeb') format('svg');
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-weight: 900;
+  font-style: normal;
+  src: url('fonts/Catamaran-regular/Catamaran-regular.eot');
+  src: url('fonts/Catamaran-regular/Catamaran-regular.eot?#iefix') format('embedded-opentype'),
+       local('Catamaran'),
+       local('Catamaran-regular'),
+       url('fonts/Catamaran-regular/Catamaran-regular.woff2') format('woff2'),
+       url('fonts/Catamaran-regular/Catamaran-regular.woff') format('woff'),
+       url('fonts/Catamaran-regular/Catamaran-regular.ttf') format('truetype'),
+       url('fonts/Catamaran-regular/Catamaran-regular.svg#Catamaran') format('svg');
+}
+
 body {
   background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(77,31,0,1))); /* safari4+,chrome */
@@ -19,7 +47,8 @@ h1 {
   font-size:6rem;
   text-transform: uppercase;
   color: white;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Catamaran', sans-serif !important;
+  font-weight: 600;
 }
 
 h1, h2, h3, h5, label, p {
