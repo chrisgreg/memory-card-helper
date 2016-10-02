@@ -14,8 +14,10 @@ class CalculatorResult extends Component {
 
   render() {
     return (
-      <div>
-        <p>Number of pictures you could store: {this.props.numberOfPictures}</p>
+      <div className="result-section">
+        <p>Number of pictures you could store:<br />
+            <span className="result">{this.props.numberOfPictures}</span>
+        </p>
       </div>
     );
   }

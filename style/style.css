@@ -1,13 +1,25 @@
 body {
-  background-image: url('../public/images/background.png');
-  background-size: 100%;
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(77,31,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(77,31,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D1F00', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+
   padding-top:5%;
+  font-family: 'Titillium Web', sans-serif !important;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
   font-size:6rem;
   text-transform: uppercase;
-  color: white
+  color: white;
+  font-family: 'Catamaran', sans-serif;
 }
 
 h1, h2, h3, h5, label, p {
@@ -34,8 +46,34 @@ h3 {
   padding-bottom: 10%;
 }
 
+.heart {
+  height: 10px;
+  margin: 0 5px;
+}
+
 .inputs {
   display: flex;
   justify-content: space-around;
   text-align: center;
+}
+
+.result {
+  font-size: 3.5rem;
+}
+
+.result-section {
+  text-align: center;
+}
+
+.footer {
+  color: white;
+}
+
+a {
+  color: #dd683c !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
