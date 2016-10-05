@@ -10,34 +10,32 @@ import {
 class CardSuggestor extends Component {
 
   componentWillMount(){
-    this.suggestMemoryCard();
+    this.props.suggestMemoryCard();
   }
 
   changeType(e) {
     const type = e.target.value;
     this.props.changeType(type);
-    this.suggestMemoryCard();
+    this.props.suggestMemoryCard();
   }
 
   changeResolution(e){
     const resolution = e.target.value;
     this.props.changeResolution(resolution);
-    this.suggestMemoryCard();
+    this.props.suggestMemoryCard();
   }
 
   changeNumberOfPictures(e) {
     const pictureCount = e.target.value;
     this.props.changeNumberOfPictures(pictureCount);
-    this.suggestMemoryCard();
-  }
-
-  suggestMemoryCard() {
     this.props.suggestMemoryCard();
   }
+
 
   render() {
     return (
       <div>
+        <h5>Get a card size suggestion:</h5>
         <form>
           <div className="inputs">
             <div className="input-group">

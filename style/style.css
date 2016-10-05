@@ -54,7 +54,7 @@ h1 {
   font-weight: 600;
 }
 
-h1, h2, h3, h5, label, p {
+h1, h2, h3, h5, label, p, small {
   color: white;
 }
 

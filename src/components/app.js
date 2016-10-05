@@ -17,7 +17,6 @@ export default class App extends Component {
           </div>
           <div className="six columns calculator">
             <img className="memory-card-image" src="public/images/card.svg" />
-            <h5>Calculate the number of pictures a memory card could store:</h5>
             <CardSuggestor />
           </div>
         </div>

@@ -34,8 +34,9 @@ class CalculatorForm extends Component {
   render() {
     return (
       <div>
-        <form>
+        <h5>Calculate the number of pictures a memory card could store:</h5>
 
+        <form>
           <div className="inputs">
             <div className="input-group">
               <label>
