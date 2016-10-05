@@ -1,4 +1,5 @@
 export const CALCULATE_NUMBER_OF_PICTURES = 'CALCULATE_NUMBER_OF_PICTURES';
+export const SUGGEST_MEMORY_CARD = 'CALCULATE_NUMBER_OF_PICTURES';
 export const CHANGE_VALUES = 'CHANGE_VALUES';
 export const CHANGE_TYPE = 'CALCULATE_CARD_SIZE';
 export const CHANGE_RESOLUTION = 'CALCULATE_CARD_SIZE';
@@ -30,6 +31,20 @@ export function changeResolution(resolution) {
   }
 }
 
+export function changeNumberOfPictures(pictureCount) {
+
+  let data = {
+    value: pictureCount,
+    type: 'picture_count'
+  }
+
+  return {
+    type: CHANGE_VALUES,
+    data
+  }
+}
+
+
 export function changeMemoryCardSize(size) {
 
   let data = {
@@ -46,6 +61,13 @@ export function changeMemoryCardSize(size) {
 export function calculateNumberOfPictures(data) {
   return {
     type: CALCULATE_NUMBER_OF_PICTURES,
+    data
+  }
+}
+
+export function suggestMemoryCard(data) {
+  return {
+    type: SUGGEST_MEMORY_CARD,
     data
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CalculatorForm from './calculator_form';
 import CalculatorResult from './calculator_result';
+import CardSuggestor from './card_suggestor.js'
 import Footer from './footer';
 import About from './about'
 
@@ -17,8 +18,7 @@ export default class App extends Component {
           <div className="six columns calculator">
             <img className="memory-card-image" src="public/images/card.svg" />
             <h5>Calculate the number of pictures a memory card could store:</h5>
-            <CalculatorForm />
-            <CalculatorResult />
+            <CardSuggestor />
           </div>
         </div>
       </div>
