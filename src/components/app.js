@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import CalculatorForm from './calculator_form';
-import CalculatorResult from './calculator_result';
+import PictureCalculator from './picture_calculator';
 import CardSuggestor from './card_suggestor.js'
 import Footer from './footer';
 import About from './about'
@@ -17,7 +16,7 @@ export default class App extends Component {
           </div>
           <div className="six columns calculator">
             <img className="memory-card-image" src="public/images/card.svg" />
-            <CardSuggestor />
+            <PictureCalculator />
           </div>
         </div>
       </div>
